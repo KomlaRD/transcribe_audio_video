@@ -44,6 +44,6 @@ for i, audio_path in enumerate(audio_paths):
     print("Transcribing audio...")
     
     # Transcribe audio from Audios directory
-    result = model.transcribe(f"Audios/{filename}.mp3") 
+    result = model.transcribe(f"{root_path}/{filename}.mp3") 
     print(json.dumps(result["text"], indent=2, ensure_ascii=False)) 
         
