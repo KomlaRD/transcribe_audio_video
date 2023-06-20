@@ -44,6 +44,6 @@ for i, video_path in enumerate(video_paths):
     print("Transcribing video...")
     
     # Transcribe video
-    result = model.transcribe(f"Videos/{filename}.mp4") 
+    result = model.transcribe(f"{root_path}/{filename}.mp4") 
     print(json.dumps(result["text"], indent=2, ensure_ascii=False)) 
         
